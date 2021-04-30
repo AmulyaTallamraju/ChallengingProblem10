@@ -154,78 +154,81 @@ As the distribution is symmetric, \begin{align}
  P(X\leq -u)=P(X\geq u)= 1-P(X\leq u)   
 \end{align} 
 Therefore, $-X_1,-X_2 ... -X_{10}$ follow the same distribution as $X_1,X_2...X_{10}$
-\begin{enumerate}[label = (\Alph*)]
-    \item \begin{multline}
-        \pr{X_1>X_2+...+X_{10}}\\=\pr{-X_1<-X_2-...-X_{10}}\\
-        =\pr{X_1<X_2+...+X_{10}}
-    \end{multline}
-    As they follow the same distribution, the above expression is true.
-    Thus we have
-    \begin{multline}\label{1}
-    \pr{X_1>X_2+...+X_{10}}\\
-        =\pr{X_1<X_2+...+X_{10}}    
-    \end{multline}
-    Also, as $X_1$ is a continuous random variable
-    \begin{align}
-       \pr{X_1=X_2+...+X_{10}}=0
-    \end{align}
-     As the cases
-     \begin{align}
-      {X_1>X_2+...+X_{10}}   
-     \end{align}and 
-     \begin{align}
-         {X_1<X_2+...+X_{10}}
-     \end{align}are complementary to each other and from \eqref{1}, we have 
-        \begin{align}
-         \pr{X_1>X_2+...+X_{10}}=\frac{1}{2}   
-        \end{align}
-        We can extend this argument to all the other options as well.
-\item
+
+If 
+\begin{align}
+ X_1,X_2...X_n \sim \mathcal{N}(0,1)   
+\end{align}
+where n is an even number and g(x) is an odd function, then
 \begin{multline}
-        \pr{X_1>X_2...X_{10}}\\=\pr{-X_1<(-X_2)(-X_3)...(-X_{10})}\\
-        =\pr{X_1<X_2X_3...X_{10}}
-    \end{multline}
-    As they follow the same distribution, the above expression is true.
-    Thus we have
-    \begin{multline}\label{1}
-    \pr{X_1>X_2X_3...X_{10}}\\
-        =\pr{X_1<X_2X_3...X_{10}}    
-    \end{multline}
-    Also, as $X_1$ is a continuous random variable
+    \pr{g(X_i)>\sum_{k=0}^ng(X_k)}\\=
+    \pr{g(-X_i)<\sum_{k=0}^ng(-X_k)}\\=
+    \pr{g(X_i)<\sum_{k=0}^ng(X_k)}
+\end{multline}
+As they follow the same distribution, the above expression is true. Thus we have
+\begin{align}\label{equality}
+    \pr{g(X_i)>\sum_{k=0}^ng(X_k)}=
+    \pr{g(X_i)<\sum_{k=0}^ng(X_k)}
+\end{align}
+Also, as $X_i$ is a continuous random variable
+\begin{align}
+    \pr{g(X_i)=\sum_{k=0}^ng(X_k)}=0
+\end{align}
+As the cases
+\begin{align}
+    g(X_i)>\sum_{k=0}^ng(X_k)
+\end{align}
+and
+\begin{align}
+    {g(X_i)<\sum_{k=0}^ng(X_k)}
+\end{align}
+are complementary to each other and from 
+and from \eqref{equality} we have
+\begin{align}\label{sum}
+ \pr{g(X_i)>\sum_{k=0}^ng(X_k)}=\frac{1}{2}    
+\end{align}
+
+
+\begin{multline}
+    \pr{g(X_i)>\prod_{k=0}^ng(X_k)}\\=
+    \pr{g(-X_i)<\prod_{k=0}^ng(-X_k)}\\=
+    \pr{g(X_i)<\prod_{k=0}^ng(X_k)}
+\end{multline}
+As they follow the same distribution, the above expression is true. Thus we have
+\begin{align}\label{equality}
+    \pr{g(X_i)>\prod_{k=0}^ng(X_k)}=
+    \pr{g(X_i)<\prod_{k=0}^ng(X_k)}
+\end{align}
+Also, as $X_i$ is a continuous random variable
+\begin{align}
+    \pr{g(X_i)=\prod_{k=0}^ng(X_k)}=0
+\end{align}
+AS the cases
+\begin{align}
+    g(X_i)>\prod_{k=0}^ng(X_k)
+\end{align}
+and
+\begin{align}
+    {g(X_i)<\prod_{k=0}^ng(X_k)}
+\end{align}
+are complementary to each other and from 
+and from \eqref{equality} we have
+\begin{align}\label{prod}
+ \pr{g(X_i)>\prod_{k=0}^ng(X_k)}=\frac{1}{2}    
+\end{align}
+\begin{enumerate}[label = (\Alph*)]
+    \item 
+    From \eqref{sum} , taking g(x)=x,
     \begin{align}
-       \pr{X_1=X_2X_3...X_{10}}=0
+        \pr{X_1>X_2+...+X_{10}}=\frac{1}{2}
     \end{align}
-     As the cases
-     \begin{align}
-      {X_1>X_2X_3...X_{10}}   
-     \end{align}and 
-     \begin{align}
-         {X_1<X_2X_3...X_{10}}
-     \end{align}are complementary to each other and from \eqref{1}, we have 
+\item
+From \eqref{prod} taking g(x)=x
         \begin{align}
          \pr{X_1>X_2X_3...X_{10}}=\frac{1}{2}   
         \end{align}
-\item \begin{multline}
-        \pr{\sin{X_1}>\sin{X_2}+...+\sin{X_{10}}}\\=\pr{\sin{(-X_1)}<\sin{(-X_2)}...\sin{(-X_{10})}}\\
-        =\pr{X_1<X_2+...+X_{10}}
-    \end{multline}
-    As they follow the same distribution, the above expression is true.
-    Thus we have
-    \begin{multline}\label{1}
-    \pr{\sin{X_1}>\sin{X_2}+...+\sin{X_{10}}}\\
-        =\pr{\sin{X_1}<\sin{X_2}+...+\sin{X_{10}}}    
-    \end{multline}
-    Also, as $X_1$ is a continuous random variable
-    \begin{align}
-       \pr{\sin{X_1}=\sin{X_2}+...+\sin{X_{10}}}=0
-    \end{align}
-     As the cases
-     \begin{align}
-      {\sin{X_1}>\sin{X_2}+...+\sin{X_{10}}}   
-     \end{align}and 
-     \begin{align}
-         {\sin{X_1}<\sin{X_2}+...+\sin{X_{10}}}
-     \end{align}are complementary to each other and from \eqref{1}, we have 
+\item 
+From \eqref{sum} taking $g(x)=\sin{x}$
         \begin{align}
          \pr{\sin{X_1}>\sin{X_2}+...+\sin{X_{10}}}=\frac{1}{2}   
         \end{align}
@@ -235,7 +238,7 @@ Therefore, $-X_1,-X_2 ... -X_{10}$ follow the same distribution as $X_1,X_2...X_
     \end{multline}
     As they follow the same distribution, the above expression is true.
     Thus we have
-    \begin{multline}\label{1}
+    \begin{multline} 
     \pr{\sin{X_1}>\sin{(X_2+...+X_{10}})}\\
         =\pr{\sin{X_1}<\sin{(X_2+...+X_{10}})}    
     \end{multline}
@@ -249,24 +252,10 @@ Therefore, $-X_1,-X_2 ... -X_{10}$ follow the same distribution as $X_1,X_2...X_
      \end{align}and 
      \begin{align}
          {X_1<X_2+...+X_{10}}
-     \end{align}are complementary to each other and from \eqref{1}, we have 
+     \end{align}are complementary to each other and from   , we have 
         \begin{align}
          \pr{\sin{X_1}>\sin{(X_2+...+X_{10}})}=\frac{1}{2}   
         \end{align}
 
-\item A more general case.
-If 
-\begin{align}
- X_1,X_2...X_n \sim \mathcal{N}(0,1)   
-\end{align}
-where n is an even number, then
-\begin{align}
-    \pr{g(X_i)>\sum_{k=0}^ng(X_k)}=\frac{1}{2}
-\end{align}
-and
-\begin{align}
-    \pr{g(X_i)>\prod_{k=0}^ng(X_k)}=\frac{1}{2}
-\end{align}
-where g(x) is an odd function.
 \end{enumerate}
 \end{document}
