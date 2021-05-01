@@ -113,7 +113,7 @@ columns=fullflexible
      \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
      \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
 \vspace{3cm}
-\title{Assignment 6}%number
+\title{Challenging Problem 10}%number
 \author{Amulya Tallamraju - AI20BTECH11003}
 \maketitle
 \newpage
@@ -161,60 +161,60 @@ If
 \end{align}
 where n is an even number and g(x) is an odd function, then
 \begin{multline}
-    \pr{g(X_i)>\sum_{k=0}^ng(X_k)}\\=
-    \pr{g(-X_i)<\sum_{k=0}^ng(-X_k)}\\=
-    \pr{g(X_i)<\sum_{k=0}^ng(X_k)}
+    \pr{g(X_1)>\sum_{k=2}^ng(X_k)}\\=
+    \pr{g(-X_1)<\sum_{k=2}^ng(-X_k)}\\=
+    \pr{g(X_1)<\sum_{k=2}^ng(X_k)}
 \end{multline}
 As they follow the same distribution, the above expression is true. Thus we have
 \begin{align}\label{equality}
-    \pr{g(X_i)>\sum_{k=0}^ng(X_k)}=
-    \pr{g(X_i)<\sum_{k=0}^ng(X_k)}
+    \pr{g(X_1)>\sum_{k=2}^ng(X_k)}=
+    \pr{g(X_1)<\sum_{k=2}^ng(X_k)}
 \end{align}
-Also, as $X_i$ is a continuous random variable
+Also, as $X_1$ is a continuous random variable
 \begin{align}
-    \pr{g(X_i)=\sum_{k=0}^ng(X_k)}=0
+    \pr{g(X_1)=\sum_{k=2}^ng(X_k)}=0
 \end{align}
 As the cases
 \begin{align}
-    g(X_i)>\sum_{k=0}^ng(X_k)
+    g(X_1)>\sum_{k=2}^ng(X_k)
 \end{align}
 and
 \begin{align}
-    {g(X_i)<\sum_{k=0}^ng(X_k)}
+    {g(X_1)<\sum_{k=2}^ng(X_k)}
 \end{align}
 are complementary to each other and from 
 and from \eqref{equality} we have
 \begin{align}\label{sum}
- \pr{g(X_i)>\sum_{k=0}^ng(X_k)}=\frac{1}{2}    
+ \pr{g(X_1)>\sum_{k=2}^ng(X_k)}=\frac{1}{2}    
 \end{align}
 
 
 \begin{multline}
-    \pr{g(X_i)>\prod_{k=0}^ng(X_k)}\\=
-    \pr{g(-X_i)<\prod_{k=0}^ng(-X_k)}\\=
-    \pr{g(X_i)<\prod_{k=0}^ng(X_k)}
+    \pr{g(X_1)>\prod_{k=2}^ng(X_k)}\\=
+    \pr{g(-X_1)<\prod_{k=2}^ng(-X_k)}\\=
+    \pr{g(X_1)<\prod_{k=2}^ng(X_k)}
 \end{multline}
 As they follow the same distribution, the above expression is true. Thus we have
 \begin{align}\label{equality}
-    \pr{g(X_i)>\prod_{k=0}^ng(X_k)}=
-    \pr{g(X_i)<\prod_{k=0}^ng(X_k)}
+    \pr{g(X_1)>\prod_{k=2}^ng(X_k)}=
+    \pr{g(X_1)<\prod_{k=2}^ng(X_k)}
 \end{align}
-Also, as $X_i$ is a continuous random variable
+Also, as $X_1$ is a continuous random variable
 \begin{align}
-    \pr{g(X_i)=\prod_{k=0}^ng(X_k)}=0
+    \pr{g(X_1)=\prod_{k=2}^ng(X_k)}=0
 \end{align}
 AS the cases
 \begin{align}
-    g(X_i)>\prod_{k=0}^ng(X_k)
+    g(X_1)>\prod_{k=2}^ng(X_k)
 \end{align}
 and
 \begin{align}
-    {g(X_i)<\prod_{k=0}^ng(X_k)}
+    {g(X_1)<\prod_{k=2}^ng(X_k)}
 \end{align}
 are complementary to each other and from 
 and from \eqref{equality} we have
 \begin{align}\label{prod}
- \pr{g(X_i)>\prod_{k=0}^ng(X_k)}=\frac{1}{2}    
+ \pr{g(X_1)>\prod_{k=2}^ng(X_k)}=\frac{1}{2}    
 \end{align}
 \begin{enumerate}[label = (\Alph*)]
     \item 
