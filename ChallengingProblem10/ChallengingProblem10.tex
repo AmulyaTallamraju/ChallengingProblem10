@@ -144,14 +144,14 @@ Suppose that $X_1,X_2,X_3,...,X_{10}$ are i.i.d, N(0,1). Which of the following 
 \section*{Solution}
 The random variables follow the standard normal distribution. If $X \sim \mathcal{N}(0,1)$ then $Y =-X$ also follows standard normal distribution. This can be proved in the following way:
 \begin{align}
-    P(Y \leq u) &= P(-X \leq u) \\
-    &= P(X > -u) \\
-    &= 1 - P(X \leq -u) \\
-    &= 1 - (1 - P(X \leq u) \\
-    &= P(X \leq u) 
+    \pr{Y \leq u} &= \pr{-X \leq u} \\
+    &= \pr{X > -u} \\
+    &= 1 - \pr{X \leq -u} \\
+    &= 1 - {1 - \pr(X \leq u} \\
+    &= \pr{X \leq u} 
 \end{align}
 As the distribution is symmetric, \begin{align}
- P(X\leq -u)=P(X\geq u)= 1-P(X\leq u)   
+ \pr{X\leq -u}=\pr{X\geq u}= 1-\pr{X\leq u}   
 \end{align} 
 Therefore, $-X_1,-X_2 ... -X_{10}$ follow the same distribution as $X_1,X_2...X_{10}$
 
